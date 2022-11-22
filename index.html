@@ -17,24 +17,51 @@
     html, body {
         width: 100%;
         height: 100%;
-        background-color: bisque;
     }
 
     header {
         height: 150px;
-        background-position:center;
+        background-color: bisque;
+        background-position: center;
         background-size: 630px, 130px;
         background-image: url("header.png");
         background-repeat: no-repeat;
     }
 
+    nav {
+        float: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+        background-color: white;
+    }
+
+
+    nav li {
+        padding:20px;
+        display: inline-block;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 32px;
+        font-weight:bold;
+    }
+
+    ul li a:hover {
+        color: #FFCA49CC;
+    }
+
     #aboutMe {
-        background-color: rgb(255,245,203);
+        background-color: rgb(255,245,233);
         margin-right: 10%;
         margin-left: 10%;
         align-items: center;
         display: flex;
         flex-direction: row;
+        border-radius: 30px 30px 0px 0px;
     }
     #abtImg{
         float:left;
@@ -166,7 +193,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(255,245,203);
+        background-color: rgb(255,245,233);
         padding: 50px;
     }
     .table {
