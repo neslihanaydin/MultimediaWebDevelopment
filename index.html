@@ -151,6 +151,46 @@
         animation-duration: 2.0s;
     }
 
+
+    #commentSection {
+        margin-right: 10%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255,245,203);
+        padding: 50px;
+    }
+    .table {
+        display: table;
+    }
+
+    .Row {
+        display: table-row;
+    }
+
+    /*Elements inside the row*/
+    .Row > * {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    #btnComment {
+        border: 2px solid #FFCA49CC;
+        box-shadow: 2px 2px #FFCA49CC;
+        border-radius: 12px;
+        padding: 5px 40px 5px 40px;
+        background-color: #FFCA49CC;
+        font-weight:bold;
+
+    }
+
+    #btnComment:hover {
+        border: 3px solid #FFCA49CC;
+        color:white;
+    }
+
+
     @keyframes blur {
         from {
             opacity: .5;
@@ -191,12 +231,12 @@
                 <div id="abtText">
                     <h1>Hey there!</h1>
                    <br />
-                    <p>
-                        I'm Neslihan. I was born and raised in Turkey. I came to Vancouver 7 months ago. I'm a Computer Science student at Douglas College.
-                        I worked as a DevOps Engineer at a company in Turkey. I'm thinking of continuing my career in this field in Canada.<br />
-                        I have other interests besides these. I love plants, knitting, cooking, and more..
-                        You can find more information about Macrome and Plants on my webpage.
-                    </p>
+                   <p>
+                       I'm Neslihan. I was born and raised in Turkey. I came to Vancouver 7 months ago. I'm a Computer Science student at Douglas College.
+                       I worked as a DevOps Engineer at a company in Turkey. I'm thinking of continuing my career in this field in Canada.<br />
+                       I have other interests besides these. I love plants, knitting, cooking, and more..
+                       You can find more information about Macrome and Plants on my webpage.&#127804;
+                   </p>
                 </div>
             </div>
             <div id="favorites">
@@ -310,7 +350,25 @@
 
             </div>
             <div id="commentSection">
+                <h2>Comments About My Page</h2><br />
+                <form>
+                    <textarea id="allcomments" rows="10" cols="80" readonly></textarea>
+                    <div class="table">
+                        <br />
+                        <div class="Row">
+                            <label for="name">Your name</label>&nbsp;
+                            <input type="text" id="name" />
+                        </div>
+                        <br />
+                        <div class="Row">
+                            <label for="newComment">Your Comment</label>&nbsp;
+                            <textarea id="newComment" rows="4" cols="50" required spellcheck="true"></textarea>
+                        </div>
+                        <br />
+                    </div>
+                    <input id="btnComment" type="button" value="Add" onclick="addcomments(this.form)" />
 
+                </form>
             </div>
         </main>
         <footer>
@@ -395,7 +453,28 @@
 
     }
 
+    function addcomments(form) {
+        var name;
+        var newCom;
+        var allCom;
+        var addedcom;
 
+        name = document.getElementById("name");
+        newCom = form.elements["newComment"];
+        allCom = form.elements["allcomments"];
+
+        if (allCom.value == "") {
+            addedcom = name.value + ":\n" + "\t" + newCom.value;
+        } else {
+            addedcom = name.value + ":\n" + "\t" + newCom.value + "\n";
+        }
+
+        allCom.value = addedcom + allCom.value;
+        newCom.value = " ";    
+
+        document.getElementById("name").value = "";
+
+    }
 </script>
 </body>
 </html>
