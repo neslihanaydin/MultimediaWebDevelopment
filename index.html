@@ -60,7 +60,12 @@
     }
 
     #favorites img {
-        vertical-align:middle;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
     }
 
     #favoriteField {
@@ -72,6 +77,7 @@
         display: flex;
         flex-direction: column;
         padding: 10px 5px 10px 5px;
+        border-radius: 30px;
     }
 
     #favoriteField h2 {
@@ -87,6 +93,7 @@
 
     #favoriteField h2:hover {
         font-size:17pt;
+        margin-bottom:14px;
 
         
     }
@@ -103,11 +110,11 @@
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 30%;
         width: auto;
         padding: 16px;
         margin-top: -22px;
-        color: white;
+        color: #FFCA49CC;
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -123,10 +130,21 @@
     }
     #imgText {
         color: black;
-        padding: 8px 12px;
+        padding: 18px 12px;
         bottom: 8px;
         width: 100%;
         text-align: center;
+        height: 150px;
+        background-color: white;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        overflow: auto;
+        margin-top: 20px;
+        border-radius: 0px 30px;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-family: 'Sentinel Book';
     }
     .fade {
         animation-name: blur;
@@ -184,28 +202,25 @@
             <div id="favorites">
                 <div id="favoriteField">
                     <h2>
-                        Favorite Movies
+                        Favorite Series
                     </h2>
                     <div id="slideshow-container">
                         <div class="slidesCont fade">
-                            <img src="im1.jpg" style="width:100%" />
+                            <img src="series1.png" style="width:80%" />
                             <div id="imgText">
-                                I have other 1 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                Two young women waitressing at a greasy spoon diner strike up an unlikely friendship in the hopes of launching a successful business - if only they can raise the cash.
                             </div>
                         </div>
                         <div class="slidesCont fade">
-                            <img src="im2.jpg" style="width:100%" />
+                            <img src="series2.jpg" style="width:80%" />
                             <div id="imgText">
-                                I have other 2 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.
                             </div>
                         </div>
                         <div class="slidesCont fade">
-                            <img src="img3.jpg" style="width:100%" />
+                            <img src="series3.jpg" style="width:80%" />
                             <div id="imgText">
-                                I have other 3 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.
                             </div>
                         </div>
 
@@ -221,24 +236,29 @@
                     </h2>
                     <div id="slideshow-container">
                         <div class="slidesFoodCont fade">
-                            <img src="Manti.jpg" style="width:100%" />
+                            <img src="Manti.jpg" style="width: 80%" />
                             <div id="imgText">
-                                I have other 1 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                Manti is one of the most famous Turkish foods. A dough similar to pasta dough is rolled out, 
+                                cut in tiny squares and filled with a spicy ground lamb or beef filling. 
+                                Traditionally, we serve manti with a garlicky yogurt sauce and a spicy butter sauce on it.
                             </div>
                         </div>
                         <div class="slidesFoodCont fade">
-                            <img src="cigkofte.png" style="width:100%" />
+                            <img src="tiramisu.jpg" style="width: 80%" />
                             <div id="imgText">
-                                I have other 2 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                The name itself, tiramisu, means “pick me up” in Italian most likely referring 
+                                to the two caffeinated ingredients that are present in the dish, espresso and cocoa. 
+                                Traditional tiramisu begins with Savoiardi Ladyfingers, light and delicately sweet 
+                                sponge cake biscuits.
                             </div>
                         </div>
                         <div class="slidesFoodCont fade">
-                            <img src="bagel.png" style="width:100%" />
+                            <img src="bagel.png" style="width: 80%" />
                             <div id="imgText">
-                                I have other 3 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                Turkish bagel is a sesame-crusted bread that lies somewhere between 
+                                a bagel and a soft pretzel. The sesame-crusted bread is a twisted ring-shaped,
+                                golden brown, and crusty on the outside with a tender, 
+                                fluffy interior.
                             </div>
                         </div>
 
@@ -254,24 +274,31 @@
                     </h2>
                     <div id="slideshow-container">
                         <div class="slidesHandCont fade">
-                            <img src="craft1.png" style="width:100%" />
+                            <img src="craft1.png" style="width: 80%" />
                             <div id="imgText">
-                                I have other 1 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                <span>
+                                    Macrame is a great hobby to learn as you don't need many tools.
+                                    One of the best things about macrame projects for beginners is
+                                    that if you go wrong you can simply undo your work! Don't forget to visit my 
+                                    <a href="macrome.html">Macrome</a> page!
+                                </span>
                             </div>
                         </div>
                         <div class="slidesHandCont fade">
-                            <img src="craft2.png" style="width:100%" />
+                            <img src="craft2.png" style="width: 80%" />
                             <div id="imgText">
-                                I have other 2 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                You can basically punch needle whatever your heart desires. 
+                                You can also adorn rugs, pillowcases, patches or anything else 
+                                that could benefit from a textural treatment.
                             </div>
                         </div>
                         <div class="slidesHandCont fade">
-                            <img src="craft3.png" style="width:100%" />
+                            <img src="craft3.png" style="width: 80%" />
                             <div id="imgText">
-                                I have other 3 besides these. I love plants, knitting, cooking, and more..
-                                You can find more information about Macrome and Plants on my webpage.
+                                By crocheting and allowing ourselves to be creative, 
+                                we are taking our mind off from whatever has been troubling us. 
+                                By focusing on the repetitive motions of individual stitches 
+                                and counting rows, our mind is able to be more relaxed.
                             </div>
                         </div>
 
