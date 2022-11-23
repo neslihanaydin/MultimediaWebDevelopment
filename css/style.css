@@ -301,9 +301,10 @@ th ul, td ul{
 }
 
 #Psummary{
-    padding-top:10px;
+    padding-top:20px;
     font-style:italic;
     padding-right:40px;
+    font-size:larger;
 }
 
 #rightBar {
