@@ -1,0 +1,313 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 150px;
+    background-color: bisque;
+    background-position: center;
+    background-size: 630px, 130px;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+}
+
+nav {
+    float: none;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+
+nav li {
+    padding: 20px;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #FFCA49CC;
+}
+
+#aboutMe {
+    background-color: rgb(255,245,233);
+    margin-right: 10%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#abtImg {
+    float: left;
+    padding: 20px 50px 20px 150px;
+}
+
+#abtImg img {
+    border-radius: 50%;
+}
+
+#abtText {
+    width: 50%;
+    padding: 40px;
+    position: relative;
+    float: right;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Sentinel Book';
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hrLine {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#hrLine hr {
+    border: 1px solid #301934;
+}
+
+#favorites {
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255,245,233);
+}
+
+#favorites img {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#favoriteField {
+    margin: 20px;
+    background-color: blanchedalmond;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
+    width: 30%;
+}
+
+#favoriteField h2 {
+    border: 2px solid #FFCA49CC;
+    box-shadow: 2px 2px #FFCA49CC;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #FFCA49CC;
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
+
+#favoriteField h2:hover {
+    font-size: 17pt;
+    margin-bottom: 14px;
+}
+
+.slidesCont .slidesFoodCont .slidesHandCont {
+    display: none;
+}
+
+#slideshow-container {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: #FFCA49CC;
+}
+
+#imgText {
+    color: black;
+    padding: 18px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    overflow: auto;
+    margin-top: 20px;
+    border-radius: 0px 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Sentinel Book';
+}
+
+.fade {
+    animation-name: blur;
+    animation-duration: 2.0s;
+}
+
+
+#commentSection {
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255,245,233);
+    padding: 50px;
+}
+
+.table {
+    display: table;
+}
+
+.Row {
+    display: table-row;
+}
+
+/*Elements inside the row*/
+.Row > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#btnComment {
+    border: 2px solid #FFCA49CC;
+    box-shadow: 2px 2px #FFCA49CC;
+    border-radius: 12px;
+    padding: 5px 40px 5px 40px;
+    background-color: #FFCA49CC;
+    font-weight: bold;
+}
+
+#btnComment:hover {
+    border: 3px solid #FFCA49CC;
+    color: white;
+    padding-bottom: 3px;
+}
+
+footer {
+    background-color: burlywood;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+table {
+    margin-bottom: 20px;
+    width: 100%;
+
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Sentinel Book';
+    font-weight: 400;
+    font-style: normal;
+}
+th, td {
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+th ul, td ul{
+    padding-left:22px;
+}
+
+#jobTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:3.0em;
+    font-weight:bold;
+    color:darkslategrey;
+}
+
+#ResumeMain{
+    background-color:antiquewhite;
+    width:60%;
+    margin-left:10%;
+}
+
+#resumeHr {
+    border: 1px solid darkslategrey;
+}
+
+#resumeHeader {
+    color: darkslategrey;
+    padding-left:10px;
+}
+
+#resumeHeader::first-letter {
+
+    font-size:1.4em;
+    
+}
+
+@keyframes blur {
+    from {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100px) {
+    .prev, .next, .text {
+        font-size: 11px;
+    }
+}
