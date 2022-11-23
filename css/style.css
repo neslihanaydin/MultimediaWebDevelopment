@@ -236,6 +236,7 @@ p {
 }
 
 footer {
+    float:left;
     background-color: burlywood;
     bottom: 0;
     color: black;
@@ -280,6 +281,7 @@ th ul, td ul{
     background-color:antiquewhite;
     width:65%;
     margin-left:10%;
+    float:left;
 }
 
 #resumeHr {
@@ -301,6 +303,12 @@ th ul, td ul{
     padding-top:10px;
     font-style:italic;
     padding-right:40px;
+}
+
+#rightBar {
+    float:right;
+    width:25%;
+    padding-left:20px;
 }
 
 @keyframes blur {
