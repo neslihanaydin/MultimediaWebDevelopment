@@ -260,6 +260,7 @@ table {
 th, td {
     text-align: left;
     padding-left: 10px;
+    padding-right:10px;
     
 }
 
@@ -293,6 +294,12 @@ th ul, td ul{
 
     font-size:1.4em;
     
+}
+
+#Psummary{
+    padding-top:10px;
+    font-style:italic;
+    padding-right:40px;
 }
 
 @keyframes blur {
