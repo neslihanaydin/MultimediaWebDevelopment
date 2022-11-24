@@ -300,11 +300,11 @@ th ul, td ul{
     
 }
 
-#Psummary{
-    padding-top:20px;
-    font-style:italic;
-    padding-right:40px;
-    font-size:larger;
+#Psummary {
+    padding-top: 20px;
+    font-style: italic;
+    padding-right: 40px;
+    font-size: larger;
 }
 
 #rightBar {
@@ -314,6 +314,7 @@ th ul, td ul{
 }
 
 #badgeForGithub {
+    line-height: 1.5;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -321,18 +322,64 @@ th ul, td ul{
     width: 301px;
     border: 1px solid #EAE5DF;
     padding-left: 17px;
+    font-size: 14px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
+
+#badgeForGithub img{
+    vertical-align:bottom;
+}
+
+#badgeForGithub table {
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: 90%;
+    text-align: justify;
+    font-style: normal;
+    font-size: 14px;
+    padding-left: 0px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    border-radius: 1em;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+
+}
+
+#badgeForGithub th, #badgeForGithub td {
+    text-align: left;
+    padding: 2px 5px 2px 5px;
+    border-bottom: 1px solid white;
+    
+}
+
+#badgeForGithub th {
+    background: #ddd;
+}
+
 
 #githubImg {
     float: left;
-    background-color:white;
-    padding-left:2px;
+    background-color: white;
+    padding-left: 2px;
+    padding-bottom:10px;
 }
 
 #githubImg img {
     border-radius: 50%;
 }
 
+#badgeForGithub a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#badgeForGithub a:hover {
+    text-decoration: underline;
+}
 
 @keyframes blur {
     from {
