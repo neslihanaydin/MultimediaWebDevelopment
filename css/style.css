@@ -390,23 +390,59 @@ th ul, td ul{
     text-decoration: underline;
 }
 
-#plantsMain {
-    background-color: white;
-    width: 65%;
-    margin-left: 10%;
-    float: left;
-}
 
 #rightBarPlants {
     float: right;
     width: 25%;
-    background-color:antiquewhite;
+    background-color:white;
     display: flex;
     flex-direction: column;
 
 }
 
+#plantsMain {
+    width: 60%;
+    float: left;
+    margin-right: auto;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    padding-top:40px;
+    padding-right:20px;
+    padding-left:10px;
+    padding-bottom:50px;
+}
 
+#plantsBigImg{
+    float:left;
+    position:inherit;
+    margin:10px;
+}
+
+#plantsMain h1 {
+    padding-top:20px;
+    padding-bottom:10px;
+}
+
+#plantPart1{
+    height:355px;
+    overflow:auto;
+}
+
+#plantsMain h3{
+    padding-top:20px;
+    padding-right:5px;
+    float:left;
+}
+
+#plantsMain a {
+    text-decoration:none;
+    color:brown;
+}
+
+#plantsMain a:hover {
+    text-decoration: underline;
+}
 
 
 @keyframes blur {
