@@ -29,7 +29,7 @@
                         I'm Neslihan. I was born and raised in Turkey. I came to Vancouver 7 months ago. I'm a Computer Science student at Douglas College.
                         I worked as a DevOps Engineer at a company in Turkey. I'm thinking of continuing my career in this field in Canada.<br />
                         I have other interests besides these. I love plants, knitting, cooking, and more..
-                        You can find more information about Macrame and Plants on my webpage.&#127804;
+                        You can find more information about me and plants on my webpage.&#127804;
                     </p>
                 </div>
             </div>
@@ -178,9 +178,14 @@
     let slideIndex = 1;
     let slideFoodIndex = 1;
     let slideHandIndex = 1;
+    var msg = "I hope you like my web page. Thanks!";
+    var msg2 = "You can share your comment with me.";
     playSlides(slideIndex);
     playFoodSlides(slideFoodIndex);
     playHandSlides(slideHandIndex);
+    initializeCommentBox(msg);
+    initializeCommentBox(msg2);
+    
 
     function plusSlides(n) {
         playSlides(slideIndex += n);
@@ -246,6 +251,15 @@
 
         slides[slideHandIndex - 1].style.display = "block";
 
+    }
+
+    function initializeCommentBox(msg) {
+        var addedcom;
+
+        var allCom = document.getElementById("allcomments");
+        
+        addedcom = "Neslihan Turpcu:\n" + "\t" + msg + "\n";
+        allCom.value = addedcom + allCom.value;
     }
 
     function addcomments(form) {
