@@ -444,6 +444,12 @@ th ul, td ul{
     text-decoration: underline;
 }
 
+#monsteraInformationDiv{
+    display:none;
+}
+#aloeInformationDiv {
+    display: none;
+}
 
 @keyframes blur {
     from {

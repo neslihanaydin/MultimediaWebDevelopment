@@ -74,6 +74,61 @@
                 Source : <a href="https://www.chapters.indigo.ca/en-ca/books/your-houseplants-first-year/9781250273727-item.html" target="_blank">YOUR HOUSEPLANT'S FIRST YEAR, Deborah L. Martin</a>
             </div>
 
+            <div id="aloeInformationDiv">
+                <div id="plantPart1">
+                    <img id="plantsBigImg" height="335" width="287" src="img/plants/aloevera.png" />
+                    <h1>Aloe vera</h1>
+                    <p>
+                        It is commonly known that the gel-like substance found inside the succulent leaves of 
+                        aloe plants has soothing effects on the skin. Aloe is still sought after by those with 
+                        sunburns who need soothing relief because Cleopatra supposedly employed it in her beauty
+                        regimen. If healing that painful burn isn't enough, aloe has another clever trick to 
+                        show off: it will reward your tender attention with cuddly grand-aloes, or pups.
+                    </p>
+                </div>
+                <div id="plantPart2">
+                    <h3>HELP ME GROW</h3>
+                    <img height="50" width="50" src="img/plants/1a.png" />
+                    <p>
+                        Your aloe will benefit from bright light, such as that coming from a south-facing window.
+                        Aloe is adaptable to most common household temperatures and isn't finicky about humidity.
+                        Wintertime cooler temperatures, less watering, and a break in feedings provide it a 
+                        healthy nap time.
+                        For keeping aloe comfortable in its pot, use a well-drained, sandy to gritty 
+                        soil-based potting mix. The risk of rotting is decreased by adding a layer of
+                        pebbles or coarse sand on top of the soil to assist moisture drain out fast from
+                        the base of the leaves.
+                    </p>
+                </div>
+                <div id="plantPart3">
+                    <h3>FEED ME</h3>
+                    <img height="50" width="50" src="img/plants/2a.png" />
+                    <p>
+                        In between waterings, let the top inch of the soil in the plant's container dry out. 
+                        Aloe prefers even moisture, but a wet environment makes it unhappy and susceptible to 
+                        rot. Reduce irrigation during the winter.
+                        From spring until the beginning of fall, fertilise aloe monthly with houseplant 
+                        fertiliser. During the cooler months, when its development will slow down, give your 
+                        aloe a rest from fertilisation. Resuming in the spring when the light is more abundant.
+                    </p>
+                </div>
+                <div>
+                    <h3>LOVE ME</h3>
+                    <img height="50" width="50" src="img/plants/3a.png" />
+                    <p>
+                        If your aloe is happy, it will generate pups, also known as baby plants 
+                        or offsets, which grow from the main plant's base.
+                        Separate the pups from the ecstatic parent aloe using a sharp knife, and then let the wounded
+                        surfaces heal for a day or two before planting them in individual pots.<br />
+                        The key is consistency: If you take care of aloe, which is long-lasting and easy to cultivate,
+                        it will be your chlorophyll friend for a very long time. Aloe thrives in bright light, but oddly, 
+                        if you transfer it suddenly from indoors to outside, the sun might burn it. Aloe can become sad 
+                        and pale when moved to a location with less light.
+                    </p>
+                </div>
+                <br />
+                Source : <a href="https://www.chapters.indigo.ca/en-ca/books/your-houseplants-first-year/9781250273727-item.html" target="_blank">YOUR HOUSEPLANT'S FIRST YEAR, Deborah L. Martin</a>
+            </div>
         </main>
         <div id="rightBarPlants">
             
@@ -107,9 +162,30 @@
         </footer>
     </div>
 <script>
+
+    function hideAll() {
+        document.getElementById("monsteraInformationDiv").style.display = "none";
+        document.getElementById("aloeInformationDiv").style.display = "none";
+        // document.getElementById("palmInformationDiv").style.display = "hide";
+        // document.getElementById("dracaenasInformationDiv").style.display = "hide";
+        // document.getElementById("kalanchoesInformationDiv").style.display = "hide";
+        // document.getElementById("liliesInformationDiv").style.display = "hide";
+
+    }
+
     function showMonstera() {
+        hideAll();
+        document.getElementById("monsteraInformationDiv").style.display = "contents";
         
     }
+
+    function showAloe() {
+        hideAll();
+        document.getElementById("aloeInformationDiv").style.display = "contents";
+
+    }
+
+    
 
 </script>
 </body>
