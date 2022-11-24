@@ -390,6 +390,25 @@ th ul, td ul{
     text-decoration: underline;
 }
 
+#plantsMain {
+    background-color: white;
+    width: 65%;
+    margin-left: 10%;
+    float: left;
+}
+
+#rightBarPlants {
+    float: right;
+    width: 25%;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
 @keyframes blur {
     from {
         opacity: .5;
