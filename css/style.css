@@ -27,6 +27,7 @@ nav {
     height: auto;
     text-align: center;
     background-color: white;
+    font-family: 'Handlee', cursive;
 }
 
 
@@ -394,23 +395,38 @@ th ul, td ul{
 #rightBarPlants {
     float: right;
     width: 25%;
-    background-color:white;
+    background-color: white;
     display: flex;
     flex-direction: column;
-
+    font-family: 'Handlee', cursive;
+    margin-right:10px;
 }
+
+#rightBarPlants a{
+    font-size: 2.2em;
+    text-decoration: none;
+    color: black;
+    font-style:normal;
+}
+
+#rightBarPlants span {
+    border-radius: 0px 10px 10px 0px;
+    padding-top: 10px;
+}
+
+
 
 #plantsMain {
     width: 60%;
     float: left;
-    margin-right: auto;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right:0px;
     display: flex;
     flex-direction: column;
-    padding-top:40px;
-    padding-right:20px;
-    padding-left:10px;
-    padding-bottom:50px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    padding-top: 0px;
 }
 
 #plantsBigImg{
@@ -429,10 +445,11 @@ th ul, td ul{
     overflow:auto;
 }
 
-#plantsMain h3{
-    padding-top:20px;
-    padding-right:5px;
-    float:left;
+#plantsMain h3 {
+    padding-top: 20px;
+    padding-right: 5px;
+    float: left;
+    
 }
 
 #plantsMain a {
@@ -450,6 +467,8 @@ th ul, td ul{
 #aloeInformationDiv {
     display: none;
 }
+
+
 
 @keyframes blur {
     from {

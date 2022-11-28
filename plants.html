@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css">
     <title>Neslihan TURPCU</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+    </style>
 </head>
 
 <body>
@@ -132,29 +135,30 @@
         </main>
         <div id="rightBarPlants">
             
-                <span>
+                <span id="monstera">
                     <img height="50" width="50" src="img/plants/2.png" />
-                    <a href="javascript:showMonstera();" ><img height="50" width="261" src="img/plants/monstera.png" /></a>
+                    <a href="javascript:showMonstera();" >Monstera Delicisio</a>
                 </span>
-                <span>
+                <span id="aloevera">
                     <img height="50" width="50" src="img/plants/3.png" />
-                    <a href="javascript:showAloe();" ><img height="50" width="261" src="img/plants/aloe.png" /></a>
+                    <a href="javascript:showAloe();" >Aloe vera</a>
                 </span>
-                <span>
+                <span id="palm">
                     <img height="50" width="50" src="img/plants/4.png" />
-                    <a href="javascript:showPalms();" ><img height="50" width="261" src="img/plants/palms.png" /></a>
+                    <a href="javascript:showPalms();" >Palms</a>
                 </span>
-                <span>
+                <span id="dracaenas">
                     <img height="50" width="50" src="img/plants/5.png" />
-                    <a href="javascript:showDracaenas();" ><img height="50" width="261" src="img/plants/dracaenas.png" /></a>
+                    <a href="javascript:showDracaenas();" >Dracaenas</a>
                 </span>
-                <span>
+                <span id="kalanchoes">
                     <img height="50" width="50" src="img/plants/6.png" />
-                    <a href="javascript:showKalanchoes();" ><img height="50" width="261" src="img/plants/kalanchoes.png" /></a>
+                    <a href="javascript:showKalanchoes();" >Kalanchoes</a>
                 </span>
-                <span>
+                <span id="lilies">
                     <img height="50" width="50" src="img/plants/8.png" />
-                    <a href="javascript:showLilies();" ><img height="50" width="261" src="img/plants/lilies.png" /></a></span>
+                    <a href="javascript:showLilies();" >Peace lilies</a>
+                </span>
 
         </div>
         <footer>
@@ -165,27 +169,71 @@
 
     function hideAll() {
         document.getElementById("monsteraInformationDiv").style.display = "none";
+        document.getElementById("monstera").style.removeProperty('border');
+
         document.getElementById("aloeInformationDiv").style.display = "none";
-        // document.getElementById("palmInformationDiv").style.display = "hide";
-        // document.getElementById("dracaenasInformationDiv").style.display = "hide";
-        // document.getElementById("kalanchoesInformationDiv").style.display = "hide";
-        // document.getElementById("liliesInformationDiv").style.display = "hide";
+        document.getElementById("aloevera").style.removeProperty('border');
+
+        /*document.getElementById("palmInformationDiv").style.display = "none";
+        document.getElementById("palm").style.removeProperty('border');
+
+        document.getElementById("dracaenasInformationDiv").style.display = "none";
+        document.getElementById("dracaenas").style.removeProperty('border');
+
+        document.getElementById("kalanchoesInformationDiv").style.display = "none";
+        document.getElementById("kalanchoes").style.removeProperty('border');
+
+        document.getElementById("liliesInformationDiv").style.display = "none";
+        document.getElementById("lilies").style.removeProperty('border');
+        */
 
     }
 
     function showMonstera() {
         hideAll();
         document.getElementById("monsteraInformationDiv").style.display = "contents";
+        document.getElementById("monstera").style.border = "1px solid #ddd";
+        document.getElementById("monstera").style.borderLeft = "none";
+            
         
     }
 
     function showAloe() {
         hideAll();
         document.getElementById("aloeInformationDiv").style.display = "contents";
-
+        document.getElementById("aloevera").style.border = "1px solid #ddd";
+        document.getElementById("aloevera").style.borderLeft = "none";
     }
 
+    function showPalms() {
+        hideAll();
+        document.getElementById("palmInformationDiv").style.display = "contents";
+        document.getElementById("palm").style.border = "1px solid #ddd";
+        document.getElementById("palm").style.borderLeft = "none";
+    }
+
+    function showDracaenas() {
+        hideAll();
+        document.getElementById("dracaenasInformationDiv").style.display = "contents";
+        document.getElementById("dracaenas").style.border = "1px solid #ddd";
+        document.getElementById("dracaenas").style.borderLeft = "none";
+    }
+
+    function showKalanchoes() {
+        hideAll();
+        document.getElementById("kalanchoesInformationDiv").style.display = "contents";
+        document.getElementById("kalanchoes").style.border = "1px solid #ddd";
+        document.getElementById("kalanchoes").style.borderLeft = "none";
+    }
+
+    function showLilies() {
+        hideAll();
+        document.getElementById("liliesInformationDiv").style.display = "contents";
+        document.getElementById("lilies").style.border = "1px solid #ddd";
+        document.getElementById("lilies").style.borderLeft = "none";
+    }
     
+
 
 </script>
 </body>
