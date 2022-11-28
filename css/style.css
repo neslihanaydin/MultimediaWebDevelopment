@@ -470,7 +470,13 @@ th ul, td ul{
     display: none;
 }
 
+#palmInformationDiv {
+    display: none;
+}
 
+#dracaenasInformationDiv {
+    display: none;
+}
 
 @keyframes blur {
     from {
