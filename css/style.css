@@ -414,13 +414,16 @@ th ul, td ul{
     padding-top: 10px;
 }
 
+#rightBarPlants a:hover {
+    font-size: 2.3em;
+}
 
 
 #plantsMain {
     width: 60%;
     float: left;
     margin-left: 10%;
-    margin-right:0px;
+    margin-right: 0px;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
