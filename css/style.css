@@ -280,7 +280,6 @@ th ul, td ul{
 }
 
 #ResumeMain{
-    background-color:white;
     width:65%;
     margin-left:10%;
     float:left;
@@ -399,7 +398,6 @@ th ul, td ul{
     display: flex;
     flex-direction: column;
     font-family: 'Handlee', cursive;
-    margin-right:10px;
 }
 
 #rightBarPlants a{
@@ -419,10 +417,9 @@ th ul, td ul{
 }
 
 #plantsMain {
-    width: 60%;
+    width: 65%;
     float: left;
     margin-left: 10%;
-    margin-right: 0px;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
