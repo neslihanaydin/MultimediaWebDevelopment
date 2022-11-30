@@ -496,6 +496,34 @@ th ul, td ul{
     }
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+fieldset {
+    margin: 20px;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+legend {
+    font-size:30px;
+    text-align:center;
+}
+
+fieldset span {
+    padding:10px;
+    margin:auto;
+}
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 100px) {
     .prev, .next, .text {
@@ -789,7 +817,6 @@ th ul, td ul{
     }
 
    
-
     #plantsMain h1 {
         padding-top: 20px;
         padding-bottom: 10px;

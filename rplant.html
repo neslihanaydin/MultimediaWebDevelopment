@@ -337,6 +337,96 @@
                 <br />
                 Source : <a href="https://www.chapters.indigo.ca/en-ca/books/your-houseplants-first-year/9781250273727-item.html" target="_blank">YOUR HOUSEPLANT'S FIRST YEAR, Deborah L. Martin</a>
             </div>
+
+            <div id="plantQuiz">
+                <form action="">
+                    <fieldset id="coffee">
+                        <legend>Pick a coffee</legend>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/espresso.png" /><br />
+                            <input type="radio" name="coffee" id="espresso">
+                            <label for="espresso">Espresso</label>
+                        </span>
+
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/latte.png" /><br />
+                            <input type="radio" name="coffee" id="latte">
+                            <label for="latte">Latte</label>
+                        </span>
+
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/tea.png" /><br />
+                            <input type="radio" name="coffee" id="tea">
+                            <label for="tea">Just Tea</label>
+                        </span>
+
+
+                    </fieldset>
+                    <fieldset id="place">
+                        <legend>Pick a place</legend>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/netherlands.png" /><br />
+                            <input type="radio" name="place" id="netherlands">
+                            <label for="netherlands">The Netherlands</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/sweden.png" /><br />
+                            <input type="radio" name="place" id="sweden">
+                            <label for="sweden">Sweden</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/vancouver.png" /><br />
+                            <input type="radio" name="place" id="vancouver">
+                            <label for="vancouver">Vancouver</label>
+                        </span>
+
+                    </fieldset>
+                    <fieldset id="hungry">
+                        <legend>Feeling hungry ?</legend>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/salad.png" /><br />
+                            <input type="radio" name="hungry" id="salad">
+                            <label for="salad">Salad</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/pizza.png" /><br />
+                            <input type="radio" name="hungry" id="pizza">
+                            <label for="pizza">Pizza</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/pasta.png" /><br />
+                            <input type="radio" name="hungry" id="pasta">
+                            <label for="pasta">Pasta</label>
+                        </span>
+
+                    </fieldset>
+                    <fieldset id="scent">
+                        <legend>Pick a scent</legend>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/sheets.png" /><br />
+                            <input type="radio" name="scent" id="sheets">
+                            <label for="scent">Fresh Sheets</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/lavender.png" /><br />
+                            <input type="radio" name="scent" id="lavender">
+                            <label for="lavender">Lavender</label>
+                        </span>
+                        <span>
+                            <img height="100" width="100" src="img/plants/survey/coffee.png" /><br />
+                            <input type="radio" name="scent" id="coffeScent">
+                            <label for="coffeScent">Coffee</label>
+                        </span>
+                    </fieldset>
+                    <input type="button" id="surveyButton" value="Submit" onclick="whichPlant()" />
+
+                </form>
+
+                <div id="surveyResult">
+                    <p id="yourPlant"></p>
+                </div>
+
+            </div>
         </main>
 
         <footer>
@@ -374,7 +464,6 @@
 
         }
 
-
         function showAloe() {
             hideAll();
             document.getElementById("aloeInformationDiv").style.display = "contents";
@@ -402,6 +491,89 @@
             document.getElementById("lilies").style.border = "1px solid #ddd";
             document.getElementById("lilies").style.borderLeft = "none";
         }
+
+        function whichPlant() {
+
+
+            var rand;
+            var espresso, latte, tea;
+            var netherlands, sweden, vancouver;
+            var salad, pizza, pasta;
+            var sheets, lavender, coffee;
+
+            espresso = document.getElementById("espresso");
+            latte = document.getElementById("latte");
+            tea = document.getElementById("tea");
+            netherlands = document.getElementById("netherlands");
+            sweden = document.getElementById("sweden");
+            vancouver = document.getElementById("vancouver");
+            salad = document.getElementById("salad");
+            pizza = document.getElementById("pizza");
+            pasta = document.getElementById("pasta");
+            sheets = document.getElementById("sheets");
+            lavender = document.getElementById("lavender");
+            coffee = document.getElementById("coffee");
+
+            var monstera = 0, lily = 0, aloe = 0;
+
+            var plantOpt = [0, 0, 0]; //plantOpt[0] => monstera, plantOpt[1] => lily, plantOpt[2] => aloe
+            
+
+
+            //lily ;You're the parent in your friend group! You give the best advice and you're sweet
+            //aloe vera; You're an honest and reliable friend! You love to be social and extroverted.
+            //monstera; You're the kind of person everyone wants to be with! You have a big personality that makes everyone around you happy.
+            
+            if (espresso.checked) ++aloe;
+            if (latte.checked) ++monstera;
+            if (tea.checked) ++lily;
+
+            if (vancouver.checked) ++aloe;
+            if (sweden.checked) ++monstera;
+            if (netherlands.checked) ++lily;
+
+            if (pasta.checked) ++aloe;
+            if (pizza.checked) ++monstera;
+            if (salad.checked) ++lily;
+
+            if (coffee.checked) ++aloe;
+            if (sheets.checked) ++monstera;
+            if (lavender.checked) ++lily;
+
+            plantOpt[0] = monstera;
+            plantOpt[1] = lily;
+            plantOpt[2] = aloe;
+
+            //Find the max value in plantOpt array
+            const max = Math.max(...plantOpt);
+            var indexes = []; //in case of having more than one max value
+            //indexes array includes max values' index
+            for (let index = 0; index < plantOpt.length; index++) {
+                if (plantOpt[index] === max) {
+                    indexes.push(index);
+                }
+            }
+            //choose random index element from indexes array
+            const resultElement = indexes[Math.floor(Math.random() * indexes.length)];
+            //if resultElement == 0 => monstera
+            //if resultElement == 1 => lily
+            //if resultElement == 2 => aloe
+
+            document.getElementById("surveyResult").style.display = "flex";
+
+
+            if (resultElement == 0) {
+                document.getElementById("yourPlant").innerHTML = "<b>Monstera</b>! You're the kind of person everyone wants to be with! You have a big personality that makes everyone around you happy.";
+            } else if (resultElement == 1) {
+                document.getElementById("yourPlant").innerHTML = "<b>Peace Lily</b>! You're the parent in your friend group! You give the best advice and you're sweet.";
+            } else if (resultElement == 2) {
+                document.getElementById("yourPlant").innerHTML = "<b>Aloe vera</b>! You're an honest and reliable friend! You love to be social and extroverted";
+
+            }
+
+
+        }
+
     </script>
     
 </body>
