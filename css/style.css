@@ -328,7 +328,7 @@ th ul, td ul{
     padding-left:20px;
 }
 
-#badgeForGithub {
+#profiles {
     margin-top:10px;
     line-height: 1.5;
     background-color: white;
@@ -342,11 +342,11 @@ th ul, td ul{
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-#badgeForGithub img{
-    vertical-align:bottom;
+#profiles img {
+    vertical-align: bottom;
 }
 
-#badgeForGithub table {
+#profiles table {
     margin-top:5px;
     margin-bottom: 5px;
     width: 90%;
@@ -364,36 +364,34 @@ th ul, td ul{
 
 }
 
-#badgeForGithub th, #badgeForGithub td {
+#profiles th, #profiles td {
     text-align: left;
     padding: 2px 5px 2px 5px;
     border-bottom: 1px solid white;
-    
 }
 
-#badgeForGithub th {
+#profiles th {
     background: #ddd;
 }
 
 
-#githubImg {
+#profileImg {
     float: left;
     background-color: white;
     padding-left: 2px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
-#githubImg img {
+#profileImg img {
     border-radius: 50%;
 }
 
-#badgeForGithub a {
+#profiles a {
     text-decoration: none;
     color: black;
-    
 }
 
-#badgeForGithub a:hover {
+#profiles a:hover {
     text-decoration: underline;
 }
 
@@ -728,9 +726,9 @@ fieldset span {
         margin-left:auto;
     }
 
-    #badgeForGithub {
-        float:right;
-        width:60%;
+    #profiles {
+        float: right;
+        width: 60%;
     }
 
     #rightBarPlants {
@@ -857,7 +855,7 @@ fieldset span {
         display:unset;
     }
 
-    #badgeForGithub {
+    #profiles {
         width: 100%;
     }
 
