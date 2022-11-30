@@ -279,6 +279,12 @@ th ul, td ul{
     color:darkslategrey;
 }
 
+#contactInfo {
+    float:right; 
+    text-align:right; 
+    padding-top:12px;
+}
+
 #ResumeMain{
     width:65%;
     margin-left:10%;
@@ -667,7 +673,6 @@ th ul, td ul{
     }
 
     #plantsMain {
-        width: 100%;
         float: left;
         margin:0;
         display: flex;
@@ -680,6 +685,46 @@ th ul, td ul{
 }
 
 @media only screen and (max-width:768px) {
+
+    #jobTitle {
+        font-size: 1.2em;
+
+    }
+
+    #contactInfo{
+        float:left;
+        padding:0;
+    }
+
+    #ResumeMain {
+        width: 100%;
+        margin:0;
+    }
+
+    #resumeHeader {
+        padding-left: 10px;
+        font-size:1.1em;
+    }
+
+    #resumeHeader::first-letter {
+        font-size: 1.3em;
+    }
+
+    #Psummary {
+        padding-top: 10px;
+        padding-right: 10px;
+        font-size: large;
+        font-style: normal;
+    }
+
+    #rightBar {
+        float: left;
+        flex-direction: column;
+    }
+
+    #badgeForGithub {
+        width: 100%;
+    }
 
     #rightBarPlants #linkText {
         display: none;
