@@ -673,6 +673,7 @@ th ul, td ul{
     }
 
     #plantsMain {
+        width:100%;
         float: left;
         margin:0;
         display: flex;
@@ -779,9 +780,7 @@ th ul, td ul{
         margin-top:20px;
     }
 
-    #plantsMain {
-        width:100%;
-    }
+   
 
     #plantsMain h1 {
         padding-top: 20px;
