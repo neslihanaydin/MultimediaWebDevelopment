@@ -679,4 +679,33 @@ th ul, td ul{
     }
 }
 
+@media only screen and (max-width:768px) {
+
+    #rightBarPlants #linkText {
+        display: none;
+    }
+
+    #rightBarPlants a:hover {
+        width:100px;
+    }
+
+    #plantsBigImg {
+        width:143px;
+        height:167px;
+        margin:5px;
+        margin-top:20px;
+    }
+
+    #plantsMain h1 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size:1.5em;
+    }
+
+    #plantPart1 {
+        height: auto;
+        padding-top:20px;
+    }
+}
+
 
