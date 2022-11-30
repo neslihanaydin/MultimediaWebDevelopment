@@ -496,3 +496,152 @@ th ul, td ul{
         font-size: 11px;
     }
 }
+
+@media only screen and (max-width:1024px) {
+    #wrapper {
+        width: 100%;
+        margin: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    header {
+        height:75px;
+        background-size: 315px, 75px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #aboutMe {
+        background-color: rgb(255,245,233);
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0px 0px 0px 0px;
+        flex-direction: column;
+    }
+
+    #abtImg {
+        padding: 20px 20px 0px 20px;
+    }
+
+    #abtImg img {
+        width:150px;
+        height:150px;
+    }
+
+    #abtText {
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    #hrLine {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #favorites {
+        margin-right: 0;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    #favoriteField {
+        margin: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+    #favoriteField h2 {
+        text-align: center;
+    }
+
+   
+    #slideshow-container {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #slidesCont {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    #favorites img {
+        display: revert;
+        max-width: 250px;
+        margin-left:20%;
+    }
+    
+    #imgText {
+        float: right;
+        display: block;
+        width:30%;
+        margin-right:20%;
+        height:250px;
+        margin-top:0;
+    }
+
+
+    .prev {
+        margin-left:15%;
+    }
+
+    .next {
+       right:unset;
+       margin-left:81%;
+    }
+    
+    .prev, .next {
+        top:unset;
+        margin-top:unset;
+        font-size:30px;
+        font-weight:normal;
+    }
+
+
+    #commentSection {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255,245,233);
+        padding: 50px;
+    }
+
+    #ResumeMain {
+        width: 100%;
+        margin-left:0;
+    }
+
+    #rightBar {
+        float: unset;
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    #badgeForGithub {
+        float:right;
+        width:60%;
+        
+    }
+
+    
+}
+
+
