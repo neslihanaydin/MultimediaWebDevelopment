@@ -462,7 +462,7 @@
             document.getElementById("monsteraInformationDiv").style.display = "contents";
             document.getElementById("monstera").style.border = "1px solid #ddd";
             document.getElementById("monstera").style.borderLeft = "none";
-
+            window.scrollTo(0, 0);
 
         }
 
@@ -471,6 +471,7 @@
             document.getElementById("aloeInformationDiv").style.display = "contents";
             document.getElementById("aloevera").style.border = "1px solid #ddd";
             document.getElementById("aloevera").style.borderLeft = "none";
+            window.scrollTo(0, 0);
         }
 
         function showPalms() {
@@ -478,6 +479,7 @@
             document.getElementById("palmInformationDiv").style.display = "contents";
             document.getElementById("palm").style.border = "1px solid #ddd";
             document.getElementById("palm").style.borderLeft = "none";
+            window.scrollTo(0, 0);
         }
 
         function showDracaenas() {
@@ -485,6 +487,7 @@
             document.getElementById("dracaenasInformationDiv").style.display = "contents";
             document.getElementById("dracaenas").style.border = "1px solid #ddd";
             document.getElementById("dracaenas").style.borderLeft = "none";
+            window.scrollTo(0, 0);
         }
 
         function showLilies() {
@@ -492,6 +495,7 @@
             document.getElementById("liliesInformationDiv").style.display = "contents";
             document.getElementById("lilies").style.border = "1px solid #ddd";
             document.getElementById("lilies").style.borderLeft = "none";
+            window.scrollTo(0, 0);
         }
 
         function showQuizForm() {
@@ -571,14 +575,26 @@
 
 
             if (resultElement == 0) {
-                document.getElementById("yourPlant").innerHTML = "<b>Monstera</b>! You're the kind of person everyone wants to be with! You have a big personality that makes everyone around you happy.";
+                document.getElementById("surveyResult").innerHTML = "<h2>Monstera!</h2><br /> <p>You're the kind of person everyone wants to be with! You have a big personality that makes everyone around you happy.</p>";
+
+                document.getElementById("surveyResult").innerHTML += "<br /><a href=\"javascript: showMonstera(); \">Click now to learn more information about Monstera</a>";
+
+
+
             } else if (resultElement == 1) {
-                document.getElementById("yourPlant").innerHTML = "<b>Peace Lily</b>! You're the parent in your friend group! You give the best advice and you're sweet.";
+                document.getElementById("surveyResult").innerHTML = "<h2>Peace Lily!</h2><br /> <p>You're the parent in your friend group! You give the best advice and you're sweet.</p>";
+
+                document.getElementById("surveyResult").innerHTML += "<br /><a href=\"javascript: showLilies(); \">Click now to learn more information about Peace Lilies</a>";
+
+
             } else if (resultElement == 2) {
-                document.getElementById("yourPlant").innerHTML = "<b>Aloe vera</b>! You're an honest and reliable friend! You love to be social and extroverted";
+                
+                document.getElementById("surveyResult").innerHTML = "<h2>Aloe vera!</h2><br /> <p>You're an honest and reliable friend! You love to be social and extroverted.</p>";
+
+                document.getElementById("surveyResult").innerHTML += "<br /><a href=\"javascript: showAloe(); \">Click now to learn more information about Aloe vera</a>";
 
             }
-
+            
 
         }
 

@@ -555,6 +555,21 @@ fieldset span {
     margin:auto;
 }
 
+#surveyResult {
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: papyrus;
+    font-size:1.2em;
+}
+
+#surveyResult a {
+    color:black;
+}
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 100px) {
