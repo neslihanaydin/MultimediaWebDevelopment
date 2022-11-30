@@ -537,7 +537,6 @@ th ul, td ul{
     #abtText {
         width: 100%;
         padding: 20px;
-        
     }
 
     #hrLine {
@@ -638,10 +637,46 @@ th ul, td ul{
     #badgeForGithub {
         float:right;
         width:60%;
-        
     }
 
+    #rightBarPlants {
+        float:left;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+    }
     
+    #rightBarPlants a {
+        font-size: 1.5em;
+    }
+
+    #rightBarPlants a:hover {
+        font-size: 1.5em;
+        color:gold;
+    }
+
+    #rightBarPlants span {
+        border-radius: 10px 10px 0px 0px;
+        padding-top: 10px;
+        margin-right:14px;
+        margin-left:4px;
+        padding-right:4px;
+    }
+
+    #plantsMain {
+        width: 100%;
+        float: left;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+        padding-top: 0px;
+    }
 }
 
 
