@@ -437,6 +437,7 @@
     </div>
     <script>
 
+        var checkQuizForm = 0;
         showMonstera();
         function hideAll() {
             document.getElementById("monsteraInformationDiv").style.display = "none";
@@ -499,13 +500,18 @@
         }
 
         function showQuizForm() {
-            document.getElementById("plantQuizForm").style.display = "flex";
-
+            if (checkQuizForm == 1) {
+                checkQuizForm = 0;
+                document.getElementById("plantQuizForm").style.display = "none";
+                document.getElementById("surveyResult").innerHTML = "";
+            } else if (checkQuizForm == 0) {
+                document.getElementById("plantQuizForm").style.display = "flex";
+            }
         }
 
         function whichPlant() {
 
-
+            checkQuizForm = 1;
             var rand;
             var espresso, latte, tea;
             var netherlands, sweden, vancouver;
