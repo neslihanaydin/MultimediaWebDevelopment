@@ -686,9 +686,47 @@ th ul, td ul{
 
 @media only screen and (max-width:768px) {
 
+    #imgText {
+        float: right;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        height: fit-content;
+        margin-top: 0;
+    }
+    #favorites img {
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-bottom:20px;
+    }
+
+    .prev {
+        margin-left: 0
+    }
+
+    .next {
+        right: 0;
+    }
+
+    #allcomments {
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        display: flex;
+        width:80%;
+    }
+
+    #newComment {
+        width: 80%;
+    }
+    
+
+
     #jobTitle {
         font-size: 1.2em;
-
     }
 
     #contactInfo{
@@ -739,6 +777,10 @@ th ul, td ul{
         height:167px;
         margin:5px;
         margin-top:20px;
+    }
+
+    #plantsMain {
+        width:100%;
     }
 
     #plantsMain h1 {
