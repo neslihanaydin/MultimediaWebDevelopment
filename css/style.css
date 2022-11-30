@@ -496,14 +496,44 @@ th ul, td ul{
     }
 }
 
-form {
+#plantQuiz {
+    margin-top:40px;
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#plantQuizForm {
+    flex-direction: column;
     width: 100%;
-    
+    align-items: center;
+    flex-direction: column;
+    font-size: 19px;
+    display: none;
+}
+
+#surveyButton, #quizButton {
+    background-color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #4CAF50;
+    padding: 15px;
+    font-size:19px;
+    margin-top: 20px;
+    color: black;
+}
+
+#surveyButton:hover, #quizButton:hover {
+    background-color: #4CAF50;
+    color: white;
+
 }
 
 fieldset {
+    width:70%;
     margin: 20px;
     padding: 20px;
     margin-right: 10%;
@@ -516,9 +546,11 @@ fieldset {
 legend {
     font-size:30px;
     text-align:center;
+    padding:5px;
 }
 
 fieldset span {
+    width:25%;
     padding:10px;
     margin:auto;
 }

@@ -339,18 +339,20 @@
             </div>
 
             <div id="plantQuiz">
-                <form action="">
+                <input type="button" id="quizButton" value="Do you want to learn What Type of Plant You Are ?" onclick="showQuizForm()" />
+
+                <form id="plantQuizForm">
                     <fieldset id="coffee">
                         <legend>Pick a coffee</legend>
                         <span>
                             <img height="100" width="100" src="img/plants/survey/espresso.png" /><br />
-                            <input type="radio" name="coffee" id="espresso">
+                            <input type="radio" name="coffee" id="espresso" checked="checked">
                             <label for="espresso">Espresso</label>
                         </span>
 
                         <span>
                             <img height="100" width="100" src="img/plants/survey/latte.png" /><br />
-                            <input type="radio" name="coffee" id="latte">
+                            <input type="radio" name="coffee" id="latte" >
                             <label for="latte">Latte</label>
                         </span>
 
@@ -366,7 +368,7 @@
                         <legend>Pick a place</legend>
                         <span>
                             <img height="100" width="100" src="img/plants/survey/netherlands.png" /><br />
-                            <input type="radio" name="place" id="netherlands">
+                            <input type="radio" name="place" id="netherlands" checked="checked">
                             <label for="netherlands">The Netherlands</label>
                         </span>
                         <span>
@@ -385,7 +387,7 @@
                         <legend>Feeling hungry ?</legend>
                         <span>
                             <img height="100" width="100" src="img/plants/survey/salad.png" /><br />
-                            <input type="radio" name="hungry" id="salad">
+                            <input type="radio" name="hungry" id="salad" checked="checked">
                             <label for="salad">Salad</label>
                         </span>
                         <span>
@@ -404,7 +406,7 @@
                         <legend>Pick a scent</legend>
                         <span>
                             <img height="100" width="100" src="img/plants/survey/sheets.png" /><br />
-                            <input type="radio" name="scent" id="sheets">
+                            <input type="radio" name="scent" id="sheets" checked="checked">
                             <label for="scent">Fresh Sheets</label>
                         </span>
                         <span>
@@ -418,7 +420,7 @@
                             <label for="coffeScent">Coffee</label>
                         </span>
                     </fieldset>
-                    <input type="button" id="surveyButton" value="Submit" onclick="whichPlant()" />
+                    <input type="button" id="surveyButton" value="Ready!" onclick="whichPlant()" />
 
                 </form>
 
@@ -492,6 +494,11 @@
             document.getElementById("lilies").style.borderLeft = "none";
         }
 
+        function showQuizForm() {
+            document.getElementById("plantQuizForm").style.display = "flex";
+
+        }
+
         function whichPlant() {
 
 
@@ -560,6 +567,7 @@
             //if resultElement == 2 => aloe
 
             document.getElementById("surveyResult").style.display = "flex";
+
 
 
             if (resultElement == 0) {
