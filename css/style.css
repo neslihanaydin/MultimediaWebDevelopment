@@ -654,6 +654,10 @@ th ul, td ul{
         margin-left: 5%;
         display: flex;
     }
+
+    #rightBarPlants img {
+        display:none;
+    }
     
     #rightBarPlants a {
         font-size: 1.5em;
@@ -759,6 +763,10 @@ th ul, td ul{
     #rightBar {
         float: left;
         flex-direction: column;
+    }
+
+    #rightBarPlants img {
+        display:unset;
     }
 
     #badgeForGithub {
