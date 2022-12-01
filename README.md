@@ -5,7 +5,7 @@
 - About me, Favorites sections added.
 - Comment section has created on the home page.
 - Footer, header, navigation bar added.
-
+- Page Storage has been used in the comment section.
 
 #Resume Page
 - Resume has created with table elements

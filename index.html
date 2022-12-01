@@ -179,13 +179,14 @@
     let slideFoodIndex = 1;
     let slideHandIndex = 1;
     var msg = "I hope you like my web page. Thanks!";
-    var msg2 = "You can share your comment with me.";
     playSlides(slideIndex);
     playFoodSlides(slideFoodIndex);
     playHandSlides(slideHandIndex);
+
     initializeCommentBox(msg);
-    initializeCommentBox(msg2);
-    
+    var data = {};
+    var emp;
+
 
     function plusSlides(n) {
         playSlides(slideIndex += n);
@@ -258,8 +259,25 @@
 
         var allCom = document.getElementById("allcomments");
         
-        addedcom = "Neslihan Turpcu:\n" + "\t" + msg + "\n";
+        addedcom = "\nNeslihan Turpcu:\n" + "\t" + msg ;
         allCom.value = addedcom + allCom.value;
+        loadCommentsPageStorage();
+
+    }
+
+    function loadCommentsPageStorage() {
+
+        var dict = JSON.parse(window.localStorage.getItem("data1"));
+        var msg = "";
+
+        for (var key in dict) {
+            var value = dict[key];
+
+            msg = msg + "\n" + value.nname + ":\n\t" + value.nnewCom;
+        }
+
+        document.getElementById("allcomments").value += msg;
+        
     }
 
     function addcomments(form) {
@@ -268,20 +286,27 @@
         var allCom;
         var addedcom;
 
-        name = document.getElementById("name");
-        newCom = form.elements["newComment"];
-        allCom = form.elements["allcomments"];
+        name = document.getElementById("name").value;
+        newCom = form.elements["newComment"].value;
+        allCom = form.elements["allcomments"].value;
 
-        if (allCom.value == "") {
-            addedcom = name.value + ":\n" + "\t" + newCom.value;
+        emp = { nname: name, nnewCom: newCom, aallCom: allCom };
+        data[name] = emp;
+
+        if (allCom == "") {
+            addedcom = name + ":\n" + "\t" + newCom;
         } else {
-            addedcom = name.value + ":\n" + "\t" + newCom.value + "\n";
+            addedcom = name + ":\n" + "\t" + newCom + "\n";
         }
 
-        allCom.value = addedcom + allCom.value;
-        newCom.value = " ";    
+        allCom = addedcom + allCom;
 
         document.getElementById("name").value = "";
+        document.getElementById("newComment").value = "";
+
+        window.localStorage.setItem("data1", JSON.stringify(data));
+        loadCommentsPageStorage();
+
 
     }
 
